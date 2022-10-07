@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../component/Navbar'
+import Footer from  '../component/Footer'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -48,8 +49,8 @@ const catalog = () => {
                   <div className="row">
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                         <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                            <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                            <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-1.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>
@@ -62,8 +63,8 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                      <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-2.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>
@@ -76,8 +77,8 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                      <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-3.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>
@@ -103,8 +104,8 @@ const catalog = () => {
                   <div className="row">
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] 2xl:mt-8 mt-8 md:mt-0">
                         <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                        <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                        <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-4.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>
@@ -117,8 +118,8 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                      <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-5.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>
@@ -131,8 +132,8 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="">
-                            <a className="relative" href="dummy.pdf">
+                      <Link href="dummy.pdf">
+                            <a className="relative" href="">
                                 <img className="w-full" src="/cat-6.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
                             </a>

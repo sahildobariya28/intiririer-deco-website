@@ -10,9 +10,11 @@ const Navbar = () => {
     <header className="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
       <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="flex sm:justify-between">
+            <Link href="/">
               <a className="py-[15px] sm:py-3 bg-white" href="">
                 <img className="logo-img 2xl:mx-auto sm:mx-0 lg:mx-auto" src="/logo-main.png" alt="" />
                 </a>
+                </Link>
               <div className="lg:hidden self-center">
                     <button className="navbar-burger flex items-center text-black">
                         <svg className="block h-5 w-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -49,13 +51,19 @@ const Navbar = () => {
                                   <div className="basis-6/12">
                                     <div className="flex justify-end mr-[35px]">
                                             <div className="top-social">
+                                            <Link href="">
                                               <a className="social-icon" href=""><i className="fa-brands fa-facebook-f"></i></a>
+                                            </Link>
                                             </div>
                                             <div className="top-social">
+                                            <Link href="">
                                               <a className="social-icon" href=""><i className="fa-brands fa-instagram"></i></a>
+                                            </Link>
                                             </div>
                                             <div className="top-social">
+                                            <Link href="">
                                               <a className="social-icon" href=""><i className="fa-brands fa-youtube"></i></a>
+                                            </Link>
                                             </div>
                                     </div>
                                   </div>
@@ -66,13 +74,23 @@ const Navbar = () => {
                   <div className="bg-[#e0ac26] w-full py-4 lg:py-3">
                     <div className="2XL:flex justify-between items-center hidden lg:flex  lg:items-center">
                     <div>
-                        <a className="pl-4 text-lg text-white hover:text-black" href="/">Home</a>
-                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="/about">About Us</a>
-                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="/catalog">Catalogues</a>
-                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="/contact">Contact Us</a>
+                      <Link href="/">
+                        <a className="pl-4 text-lg text-white hover:text-black" href="">Home</a>
+                      </Link>
+                      <Link href="/about">
+                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="">About Us</a>
+                      </Link>
+                      <Link href="/catalog">
+                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="">Catalogues</a>
+                      </Link>
+                      <Link href="/contact">
+                        <a className="pl-16 lg:pl-10 text-lg text-white hover:text-black" href="">Contact Us</a>
+                      </Link>
                       </div>
                       <div>
+                      <Link href="">
                           <a className="get-btn bg-[#c79b2a] text-lg text-white font-normal" href="">Get a quote</a>
+                      </Link>
                       </div>
                     </div>
                   </div>
@@ -124,9 +142,11 @@ const Navbar = () => {
       <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="2xl:py-3 xl:py-3 lg:py-3 md:py-4 sm:py-3 py-3 bg-white">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="flex justify-between items-center">
-            <a href="/" className="brand-2 w-nav-brand">
+          <Link href="/">
+            <a href="" className="brand-2 w-nav-brand">
               <img src="/sticky.png" loading="lazy" alt="" className="sticky-img"/>
               </a>
+            </Link>
               <nav role="navigation" className="2xl:flex xl:flex lg:flex relative float-right items-center hidden">
                 <div data-hover="true" data-delay="0" className="">
                   <div className="">
@@ -134,11 +154,21 @@ const Navbar = () => {
                       </div>
                       </div>
                         </div>
-                        <a href="/" aria-current="page" className="nav-link link-h text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Home</a>
-                        <a href="/about" className="nav-link link-a text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">About Us</a>
-                        <a href="/catalog" className="nav-link link-c text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Catalogues</a>
-                        <a href="/contact" className="nav-link text-lg font-normal pl-[66px] pr-[20px] lg:pl-[35px] link-s">Contact Us</a>
-                        <a href="#email-form" className="get-new">Get a quote</a>
+                        <Link href="/">
+                        <a href="" aria-current="page" className="nav-link link-h text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Home</a>
+                        </Link>
+                        <Link href="/about">
+                        <a href="" className="nav-link link-a text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">About Us</a>
+                        </Link>
+                        <Link href="/catalog">
+                        <a href="" className="nav-link link-c text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Catalogues</a>
+                        </Link>
+                        <Link href="/contact">
+                        <a href="" className="nav-link text-lg font-normal pl-[66px] pr-[20px] lg:pl-[35px] link-s">Contact Us</a>
+                        </Link>
+                        <Link href="#email-form">
+                        <a href="" className="get-new">Get a quote</a>
+                        </Link>
                         </nav>
                         <div className="lg:hidden self-center">
                     <button className="navbar-burger flex items-center text-black">

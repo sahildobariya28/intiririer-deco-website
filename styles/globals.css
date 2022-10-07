@@ -360,7 +360,6 @@ footer {
 
 
 
-
 header{
   position: absolute;
     z-index: 99;
@@ -430,6 +429,12 @@ header{
     background-color: #e0ac26;
     color: #fff;
     font-size: 16px;
+    transition: all 0.5s;
+}
+.get-new:hover {
+  background-color: transparent;
+  border: 1px solid #e0ac26;
+  color: #e0ac26;
 }
 .link-h::after{
   content:'';

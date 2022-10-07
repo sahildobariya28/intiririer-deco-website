@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from  '../component/Footer'
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 import Navbar from '../component/Navbar'
@@ -20,7 +21,7 @@ const about = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         
 
-      <script src='/ab.js'></script>
+      <script src='/sc.js'></script>
 
       </Head>
       <script src="/jquery-1.11.0.min.js"></script>

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../component/Navbar'
+import Footer from  '../component/Footer'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
