@@ -24,24 +24,24 @@ const Footer = () => {
                     <div className="2xl:basis-3/12 lg:basis-3/12 px-[15px] basis-full sm:basis-6/12">
                         <ul className="lg:pl-12  sm:pl-16 pt-8 sm:pt-8 pl-0">
                           <li>
-                            <Link href="/">
+                        <Link href="/">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Home</a>
-                            </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/about">
+                        <Link href="/about">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">About Us</a>
-                          </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/catalog">
+                        <Link href="/catalog">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Catalog</a>
-                            </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/contact">
+                        <Link href="/contact">
                             <a className="text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Contact Us</a>
-                            </Link>
+                        </Link>
                           </li>
                         </ul>
                     </div>

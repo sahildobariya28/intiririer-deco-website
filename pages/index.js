@@ -42,7 +42,7 @@ const index = () => {
 
 
 
-
+      
       <header className="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
       <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="flex sm:justify-between">
@@ -50,7 +50,7 @@ const index = () => {
               <a className="py-[15px] sm:py-3 bg-white" href="">
                 <img className="logo-img 2xl:mx-auto sm:mx-0 lg:mx-auto" src="/logo-main.png" alt="" />
                 </a>
-                </Link>
+              </Link>
               <div className="lg:hidden self-center">
                     <button className="navbar-burger flex items-center text-black">
                         <svg className="block h-5 w-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -111,20 +111,20 @@ const index = () => {
                     <div className="2XL:flex justify-between items-center hidden lg:flex  lg:items-center">
                     <div>
                       <Link href="/">
-                        <a href="" className="pl-4 text-lg text-white hover:text-black">Home</a>
+                        <a href="" className="pl-4 pr-5 text-lg text-white hover:text-black">Home</a>
                       </Link>
                       <Link href="/about">
-                        <a href="" className={router.pathname == "/about" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black" }>About Us</a>
+                        <a href="" className={router.pathname == "/about" ? "active" : "2xl:pl-16 pr-5 lg:pl-10 text-lg text-white hover:text-black" }>About Us</a>
                       </Link>
                       <Link href="/catalog">
-                        <a href="" className={router.pathname == "/catalog" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Catalogues</a>
+                        <a href="" className={router.pathname == "/catalog" ? "active" : "2xl:pl-16 pr-5 lg:pl-10 text-lg text-white hover:text-black"}>Catalogues</a>
                       </Link>
                       <Link href="/contact">
-                        <a href="" className={router.pathname == "/contact" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Contact Us</a>
+                        <a href="" className={router.pathname == "/contact" ? "active" : "2xl:pl-16 pr-5 lg:pl-10 text-lg text-white hover:text-black"}>Contact Us</a>
                       </Link>
                       </div>
                       <div>
-                      <Link href="">
+                      <Link href="#get">
                           <a href="" className="get-btn bg-[#c79b2a] text-lg text-white font-normal">Get a quote</a>
                       </Link>
                       </div>
@@ -182,7 +182,7 @@ const index = () => {
             <a href="" className="brand-2 w-nav-brand">
               <img src="/sticky.png" loading="lazy" alt="" className="sticky-img"/>
               </a>
-            </Link>
+          </Link>
               <nav role="navigation" className="2xl:flex xl:flex lg:flex relative float-right items-center hidden">
                 <div data-hover="true" data-delay="0" className="">
                   <div className="">
@@ -190,21 +190,21 @@ const index = () => {
                       </div>
                       </div>
                         </div>
-                        <Link href="/">
+                      <Link href="/">
                         <a href="" aria-current="page" className="nav-link link-h text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Home</a>
-                        </Link>
-                        <Link href="/about">
+                      </Link>
+                      <Link href="/about">
                         <a href="" className="nav-link link-a text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">About Us</a>
-                        </Link>
-                        <Link href="/catalog">
+                      </Link>
+                      <Link href="/catalog">
                         <a href="" className="nav-link link-c text-lg font-normal pl-[66px] lg:pl-[35px] pr-[20px]">Catalogues</a>
-                        </Link>
-                        <Link href="/contact">
+                      </Link>
+                      <Link href="/contact">
                         <a href="" className="nav-link text-lg font-normal pl-[66px] pr-[20px] lg:pl-[35px] link-s">Contact Us</a>
-                        </Link>
-                        <Link href="#email-form">
+                      </Link>
+                      <Link href="#get">
                         <a href="" className="get-new">Get a quote</a>
-                        </Link>
+                      </Link>
                         </nav>
                         <div className="lg:hidden self-center">
                     <button className="navbar-burger flex items-center text-black">
@@ -461,7 +461,7 @@ const index = () => {
       <div className="request-form">
           <div className="row justify-center">
               <div className="lg:basis-6/12 px-[15px] basis-full">
-                <div>
+                <div id="get">
                     <h3 className="lg:text-[40px] text-[30px] leading-[34px] font-medium text-white mb-3 sm:text-[36px] sm:leading-[40px]">Send Message</h3>
                     <p className="lg:text-lg text-base sm:text-lg text-[#bbb] font-normal 2xl:mr-20 mr-0 mb-3 lg:mr-0">Lorem ipsum dolor sit amet, conse adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>

@@ -159,7 +159,7 @@ const about = () => {
       <div className="request-form">
           <div className="row justify-center">
               <div className="lg:basis-6/12 px-[15px] basis-full">
-                <div>
+                <div id="get">
                     <h3 className="lg:text-[40px] text-[30px] leading-[34px] font-medium text-white mb-3 sm:text-[36px] sm:leading-[40px]">Send Message</h3>
                     <p className="lg:text-lg text-base sm:text-lg text-[#bbb] font-normal 2xl:mr-20 mr-0 mb-3 lg:mr-0">Lorem ipsum dolor sit amet, conse adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                 </div>
@@ -204,9 +204,9 @@ const about = () => {
                     <div className="2xl:basis-3/12 lg:basis-3/12 px-[15px] basis-full sm:basis-6/12">
                         <ul className="lg:pl-12  sm:pl-16 pt-8 sm:pt-8 pl-0">
                           <li>
-                            <Link href="/">
+                          <Link href="/">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Home</a>
-                            </Link>
+                          </Link>
                           </li>
                           <li>
                           <Link href="/about">
@@ -216,12 +216,12 @@ const about = () => {
                           <li>
                           <Link href="/catalog">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Catalog</a>
-                            </Link>
+                          </Link>
                           </li>
                           <li>
                           <Link href="/contact">
                             <a className="text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Contact Us</a>
-                            </Link>
+                          </Link>
                           </li>
                         </ul>
                     </div>
@@ -238,7 +238,7 @@ const about = () => {
                                         </div>
                                     </div>
                                     <div className="flex items-center mb-8">
-                                      <div>
+                                        <div>
                                         <i className="fa-solid fa-envelope lg:text-2xl text-lg sm:text-2xl"></i>
                                         </div>
                                         <div className="lg:text-lg text-base pl-4 sm:text-lg">

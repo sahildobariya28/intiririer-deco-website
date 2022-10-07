@@ -49,7 +49,7 @@ const catalog = () => {
                   <div className="row">
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                         <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                            <Link href="dummy.pdf">
+                            <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-1.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -63,7 +63,7 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="dummy.pdf">
+                        <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-2.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -77,7 +77,7 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="dummy.pdf">
+                        <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-3.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -104,7 +104,7 @@ const catalog = () => {
                   <div className="row">
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] 2xl:mt-8 mt-8 md:mt-0">
                         <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                        <Link href="dummy.pdf">
+                        <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-4.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -118,7 +118,7 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="dummy.pdf">
+                      <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-5.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -132,7 +132,7 @@ const catalog = () => {
                       </div>
                       <div className="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
                       <div className="catalog-card 2xl:p-9 p-5 bg-white">
-                      <Link href="dummy.pdf">
+                        <Link href="dummy.pdf" target="_blank">
                             <a className="relative" href="">
                                 <img className="w-full" src="/cat-6.png" alt="" />
                                 <div className="overlay"><img src="/download.png" alt="" /></div>
@@ -168,24 +168,24 @@ const catalog = () => {
                     <div className="2xl:basis-3/12 lg:basis-3/12 px-[15px] basis-full sm:basis-6/12">
                         <ul className="lg:pl-12  sm:pl-16 pt-8 sm:pt-8 pl-0">
                           <li>
-                            <Link href="/">
+                        <Link href="/">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Home</a>
-                            </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/about">
+                        <Link href="/about">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">About Us</a>
-                          </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/catalog">
+                        <Link href="/catalog">
                             <a className="lg:mb-[32px] mb-[20px] text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Catalog</a>
-                            </Link>
+                        </Link>
                           </li>
                           <li>
-                          <Link href="/contact">
+                        <Link href="/contact">
                             <a className="text-black text-lg block font-normal hover:text-[#e0ac26]" href="">Contact Us</a>
-                            </Link>
+                        </Link>
                           </li>
                         </ul>
                     </div>
