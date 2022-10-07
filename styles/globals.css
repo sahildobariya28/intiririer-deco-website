@@ -36,6 +36,11 @@ a {
   }
 }
 
+.active {
+  color: #000;
+  padding-left: 64px;
+  font-size: 18px;
+}
 
 .reviews .slick-next:before {
   content: '\f054';
@@ -91,26 +96,24 @@ a {
   background-size:100% 100%;
   padding:300px 0;
 }
-.slick-dots {
+.reviews .slick-dots {
   bottom: 0;
+  margin-bottom: 30px;
 }
-.slick-dots li.slick-active button:before {
+.reviews .slick-dots li.slick-active button:before {
  background-color: #FFFFFF;
  border-radius: 50%;
  border: none;
  color: #FFFFFF;
  opacity: 1;
 }
-.slick-dots li button:before {
+.reviews .slick-dots li button:before {
     color: transparent;
     font-size: 18px;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
     background-color: transparent;
     opacity: 1;
-}
-.slick-dots {
-  margin-bottom: 30px;
 }
 .logo-img {
     width: 75%;
@@ -520,7 +523,7 @@ header{
   .slick-track {
     transform: none;
   }
-  .slick-dots {
+  .reviews .slick-dots {
     margin-bottom: 20px;
   }
   .what-title-block {
@@ -557,7 +560,7 @@ header{
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .slick-dots {
+  .reviews .slick-dots {
     bottom: 10px;
 }
 .social-link {

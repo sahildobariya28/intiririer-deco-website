@@ -111,21 +111,21 @@ const index = () => {
                     <div className="2XL:flex justify-between items-center hidden lg:flex  lg:items-center">
                     <div>
                       <Link href="/">
-                        <a href="" className={router.pathname == "/" ? "active" :"pl-4 text-lg text-white hover:text-black"}>Home</a>
+                        <a href="" className="pl-4 text-lg text-white hover:text-black">Home</a>
                       </Link>
                       <Link href="/about">
-                        <a href="" className={router.pathname == "/" ? "active" : "pl-16 lg:pl-10 text-lg text-white hover:text-black" }>About Us</a>
+                        <a href="" className={router.pathname == "/about" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black" }>About Us</a>
                       </Link>
                       <Link href="/catalog">
-                        <a href="" className={router.pathname == "/" ? "active" : "pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Catalogues</a>
+                        <a href="" className={router.pathname == "/catalog" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Catalogues</a>
                       </Link>
                       <Link href="/contact">
-                        <a href="" className={router.pathname == "/" ? "active" : "pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Contact Us</a>
+                        <a href="" className={router.pathname == "/contact" ? "active" : "2xl:pl-16 lg:pl-10 text-lg text-white hover:text-black"}>Contact Us</a>
                       </Link>
                       </div>
                       <div>
                       <Link href="">
-                          <a href="" className={router.pathname == "/" ? "active" : "get-btn bg-[#c79b2a] text-lg text-white font-normal"}>Get a quote</a>
+                          <a href="" className="get-btn bg-[#c79b2a] text-lg text-white font-normal">Get a quote</a>
                       </Link>
                       </div>
                     </div>
