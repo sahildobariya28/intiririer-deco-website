@@ -1,24 +1,22 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import Script from 'next/script';
 import { useRouter } from 'next/router';
-import Navbar from '../component/Footer';
+import Link from 'next/link';
 
-
-const about = () => {
+const contact = () => {
   const router = useRouter();
   return (
     <>
-
+    
+   
+    
 <Head>
-        <title>About Us</title>
+        <title>Contact Us</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="Free Web tutorials" />
         <meta name="keywords" content="HTML, CSS, JavaScript, next.js" />
         <meta name="author" content="thapa technical" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -29,7 +27,7 @@ const about = () => {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
-      <script src='/ab.js'></script>
+    <script src='/sc.js'></script>
 
       </Head>
       <script src="/jquery-1.11.0.min.js"></script>
@@ -40,7 +38,7 @@ const about = () => {
       <header class="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
       <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div class="flex sm:justify-between">
-              <a class="py-[15px] sm:py-3 bg-white" href="/">
+              <a class="py-[15px] sm:py-3 bg-white" href="">
                 <img class="logo-img 2xl:mx-auto sm:mx-0 lg:mx-auto" src="/logo-main.png" alt="" />
                 </a>
               <div className="lg:hidden self-center">
@@ -51,7 +49,7 @@ const about = () => {
                         </svg>
                     </button>
                 </div>
-              <div class="menu-main lg:block hidden">
+              <div class="menu-main lg:block sm:hidden hidden">
                   <div class="py-4 lg:py-3 bg-[#231f20]">
                       <div class="row items-center">
                           <div class="basis-6/12 px-[15px]">
@@ -136,7 +134,7 @@ const about = () => {
                     </li>
                     <ul className="dropdown inline-block relative">
                         <li className="mb-1">
-                          <Link href="">
+                        <Link href="">
                             <a className="text-base font-semibold text-[#6b747b] hover:text-black block py-3">
                             Services
                                 {/* <i className="fa-solid fa-caret-down"></i> */}
@@ -208,125 +206,52 @@ const about = () => {
 
 
 
-     <section class="about-bg">
+     <section class="contact-bg">
           <div class="over-bg">
           </div>
-          <h2 class="relative text-white z-[999] font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">About Us</h2>
+          <h2 class="relative text-white font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">Contact Us</h2>
      </section>
+
     
 
-    <section class="2xl:py-[85px] py-[50px] sm:py-[60px]">
+    <section class="2xl:py-[100px] py-[60px]">
         <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-          <div class="2xl:w-[72%] w-full mx-auto xl:w-[75%]">
-            <p class="2xl:text-lg 2xl:leading-9 text-center text-base leading-8 sm:text-[17px] lg:text-lg lg:leading-9 xl:text-lg xl:leading-9">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum."</p>
-          </div>
+            <div class="map-main">
+                <div class="row">
+                  <div class="lg:basis-9/12 px-[15px] md:basis-9/12 sm:basis-full basis-full">
+                        <div class="map-left 2xl:p-[60px] p-[20px] sm:p-[30px] md:p-[30px] lg:p-[60px]">
+                            <div class="flex 2xl:mb-8 mb-5 sm:mb-6 md:mb-8">
+                                <div><i class="fa-solid fa-phone 2xl:text-2xl lg:text-2xl text-lg sm:text-xl text-black"></i></div>
+                                <div class="2xl:text-xl text-base lg:text-xl text-black 2xl:ml-10 ml-4 sm:ml-5 md:ml-6 font-medium">+91 9104466884<br/>+91 9104466885</div>
+                            </div>
+                            <div class="flex 2xl:mb-8 mb-5 sm:mb-6 md:mb-8">
+                                <div><i class="fa-solid fa-envelope 2xl:text-2xl lg:text-2xl text-lg sm:text-xl text-black"></i></div>
+                                <div class="2xl:text-xl text-base lg:text-xl text-black 2xl:ml-10 ml-4 sm:ml-5 md:ml-6 font-medium">info@interiodeco.in</div>
+                            </div>
+                            <div class="flex 2xl:mb-8 mb-5 sm:mb-6 md:mb-8">
+                                <div><i class="fa-solid fa-globe 2xl:text-2xl lg:text-2xl text-lg sm:text-xl text-black"></i></div>
+                                <div class="2xl:text-xl text-base lg:text-xl text-black 2xl:ml-10 ml-4 sm:ml-5 md:ml-6 font-medium">www.interiodeco.in</div>
+                            </div>
+                            <div class="flex">
+                                <div><i class="fa-sharp fa-solid fa-location-dot 2xl:text-2xl lg:text-2xl text-lg sm:text-xl text-black"></i></div>
+                                <div class="2xl:text-xl text-base lg:text-xl 2xl:leading-8 leading-7 lg:leading-8 text-black 2xl:ml-10 ml-4 sm:ml-5 md:ml-6 font-medium 2xl:max-w-[50%] md:max-w-[58%] max-w-full">47/A, Meldi Industrial Estate, Nr Gota Railway Crossing, Gota,Ahmedabad, Gujarat - 382481</div>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="lg:basis-3/12 px-[15px] md:basis-3/12 basis-full">
+                  <div class="map-main-right">
+                    <div class="map-main-inner">
+                    <img class="w-full h-full" src="/map.png" alt="" />
+                    </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    <section class="2xl:py-[100px] py-[60px] sm:py-[80px] lg:py-[100px] bg-[#fafafa]">
-        <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-          <div class="">
-                <h2 class="2xl::text-[50px] 2xl:leading-[65px] font-bold text-[#383838] text-center text-[34px] leading-[34px] sm:text-[42px] sm:leading-[42px] lg:text-[38px] lg:leading-10 xl:text-[42px]">Who We Are</h2>
-                <div class="who-main pt-10">
-                   <div class="row items-center">
-                      <div class="lg:basis-6/12 px-[15px] basis-full md:basis-6/12">
-                        <div class="text-center">
-                        <img class="mx-auto 2xl:w-[70%] xl:w-[70%] w-[100%] sm:w-[60%] md:w-[100%] lg:w-[80%]" src="/about-img.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="lg:basis-6/12 px-[15px] basis-full md:basis-6/12">
-                          <div class="who-right">
-                              <h2 class="2xl:text-[22px] font-medium 2xl:leading-10 xl:text-[22px] xl:leading-8 text-[#e0ac26] 2xl:mb-8 mb-6 mt-7 text-[18px] leading-7 md:mt-0 lg:text-lg lg:leading-7 lg:mb-8">Lorem Ipsum has been the industry standard galley of type and scrambled it to make type specimen</h2>
-                              <p class="2xl:text-lg xl:text-lg font-normal text-base sm:text-lg lg:text-base">Lorem Ipsum has been the industry standard dummy text ever since the 150s, when unknown printer took a galley of type and scrambled it to make type specimen It has survived not only five centuries Lorem Ipsum has been the industry standard text ever since the 1500s, when unknown printer took a 
-                              galley of type and scrambled it to make a type specimen book. It has survived not only scram to five centuries<br/><br/>industry standard dummy text ever since the 150s, when unknown printer took a galley of type and scrambled it to</p>
-                          </div>
-                      </div>
-                   </div>
-                </div>
-          </div>
-        </div>
-  </section>
-
-
-  <section class="lg:py-[100px] py-[60px] sm:py-[80px]">
-    <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-      <div class="row items-center">
-          <div class="lg:basis-6/12 px-[15px] basis-full">
-                <h2 class="lg:text-[38px] text-[20px] font-bold lg:leading-10 leading-7 text-black mb-3 sm:text-[28px]">Explore Premium Windows</h2>
-                <ul class="lg:mt-8 mt-7">
-                  <li class="py-1 flex">   
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="pt-[25px] pb-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                </ul>
-          </div>
-          <div class="lg:basis-6/12 px-[15px] basis-full">
-                <div class="counter-right">
-                    <div class="row">
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                            <div class="counter-card mb-[30px] bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number1 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">300</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Project Completed</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card mb-[30px] bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number2 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">206</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Doors Per Day</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card lg:mb-[30px] mb-0 bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number3 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">200</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Satisfied Customer</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card lg:mb-[30px] mb-0 bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number4 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">15</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Door</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="bg-[#272727] lg:py-[100px] py-[60px] sm:py-[80px]">
+  
+    <section class="bg-[#272727] lg:py-[100px] py-[60px] sm:py-[80px]">
     <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
       <div class="request-form">
           <div class="row justify-center">
@@ -357,6 +282,7 @@ const about = () => {
                         </div>
                     </div>
   </section>
+
 
 
   <footer class="py-[60px] sm:py-[80px]">
@@ -468,4 +394,4 @@ const about = () => {
   )
 }
 
-export default about
+export default contact

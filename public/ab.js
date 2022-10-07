@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const burger = document.querySelectorAll('.navbar-burger');
@@ -41,38 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-$(document).ready(function() {
-    $('.reviews').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // autoplay: true,
-        dots: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true
-            }
-        }, {
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true
-            }
-        }],
-    });
-});
-
-
-
-
-
 $.fn.jQuerySimpleCounter = function( options ) {
     var settings = $.extend({
         start:  0,
@@ -100,6 +67,7 @@ $('.number1').jQuerySimpleCounter({end: 300,duration: 5000});
 $('.number2').jQuerySimpleCounter({end: 206,duration: 5000});
 $('.number3').jQuerySimpleCounter({end: 200,duration: 5000});
 $('.number4').jQuerySimpleCounter({end: 15,duration: 5000});
+
 
 
 

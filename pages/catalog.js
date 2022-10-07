@@ -1,24 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import Script from 'next/script';
 import { useRouter } from 'next/router';
-import Navbar from '../component/Footer';
+import Link from 'next/link';
 
-
-const about = () => {
+const catalog = () => {
   const router = useRouter();
   return (
     <>
 
+    
 <Head>
-        <title>About Us</title>
+        <title>Catalogues</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="Free Web tutorials" />
         <meta name="keywords" content="HTML, CSS, JavaScript, next.js" />
         <meta name="author" content="thapa technical" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -29,18 +26,17 @@ const about = () => {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
-      <script src='/ab.js'></script>
+    <script src='/sc.js'></script>
 
       </Head>
       <script src="/jquery-1.11.0.min.js"></script>
       <script src="/jquery-migrate-1.2.1.min.js"></script>
       <script src="/slick.min.js"></script>
 
-
       <header class="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
       <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div class="flex sm:justify-between">
-              <a class="py-[15px] sm:py-3 bg-white" href="/">
+              <a class="py-[15px] sm:py-3 bg-white" href="">
                 <img class="logo-img 2xl:mx-auto sm:mx-0 lg:mx-auto" src="/logo-main.png" alt="" />
                 </a>
               <div className="lg:hidden self-center">
@@ -51,7 +47,7 @@ const about = () => {
                         </svg>
                     </button>
                 </div>
-              <div class="menu-main lg:block hidden">
+              <div class="menu-main lg:block sm:hidden hidden">
                   <div class="py-4 lg:py-3 bg-[#231f20]">
                       <div class="row items-center">
                           <div class="basis-6/12 px-[15px]">
@@ -136,7 +132,7 @@ const about = () => {
                     </li>
                     <ul className="dropdown inline-block relative">
                         <li className="mb-1">
-                          <Link href="">
+                        <Link href="">
                             <a className="text-base font-semibold text-[#6b747b] hover:text-black block py-3">
                             Services
                                 {/* <i className="fa-solid fa-caret-down"></i> */}
@@ -208,158 +204,112 @@ const about = () => {
 
 
 
-     <section class="about-bg">
+     <section class="catalog-bg">
           <div class="over-bg">
           </div>
-          <h2 class="relative text-white z-[999] font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">About Us</h2>
+          <h2 class="relative text-white z-[999] font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">Catalogues</h2>
      </section>
     
 
-    <section class="2xl:py-[85px] py-[50px] sm:py-[60px]">
+    <section class="2xl:py-[100px]  py-[60px]">
         <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-          <div class="2xl:w-[72%] w-full mx-auto xl:w-[75%]">
-            <p class="2xl:text-lg 2xl:leading-9 text-center text-base leading-8 sm:text-[17px] lg:text-lg lg:leading-9 xl:text-lg xl:leading-9">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum."</p>
-          </div>
+            <div class="">
+               <h3 class="2xl:text-3xl font-medium text-[#e0ac26] text-[26px] leading-8">Catalouge 1</h3>
+               <div class="2xl:mt-[50px] mt-[30px]">
+                  <div class="row">
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
+                        <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-1.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 1</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
+                      <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-2.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 2</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mb-8">
+                      <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-3.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 3</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="2xl:pb-[100px] pb-[70px]">
+        <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
+            <div class="">
+               <h3 class="2xl:text-3xl font-medium text-[#e0ac26] text-[26px] leading-8">Catalouge 2</h3>
+               <div class="2xl:mt-[50px] mt-[30px]">
+                  <div class="row">
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] 2xl:mt-8 mt-8 md:mt-0">
+                        <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-4.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 4</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
+                      <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-5.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 5</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                      <div class="2xl:basis-4/12 md:basis-4/12 sm:basis-6/12 px-[15px] mt-8 md:mt-0">
+                      <div class="catalog-card 2xl:p-9 p-5 bg-white">
+                            <a class="relative" href="dummy.pdf">
+                                <img class="w-full" src="/cat-6.png" alt="" />
+                                <div class="overlay"><img src="/download.png" alt="" /></div>
+                            </a>
+                        </div>
+                        <div class="2xl:mt-8 mt-5">
+                            <h4 class="2xl:text-2xl text-lg text-[#e0ac26] font-medium 2xl:mb-2 xl:mb-2 mb-[5px]">Item 6</h4>
+                            <p class="text-lg font-normal">Amet minim mollit nont.</p>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
         </div>
     </section>
 
 
-    <section class="2xl:py-[100px] py-[60px] sm:py-[80px] lg:py-[100px] bg-[#fafafa]">
-        <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-          <div class="">
-                <h2 class="2xl::text-[50px] 2xl:leading-[65px] font-bold text-[#383838] text-center text-[34px] leading-[34px] sm:text-[42px] sm:leading-[42px] lg:text-[38px] lg:leading-10 xl:text-[42px]">Who We Are</h2>
-                <div class="who-main pt-10">
-                   <div class="row items-center">
-                      <div class="lg:basis-6/12 px-[15px] basis-full md:basis-6/12">
-                        <div class="text-center">
-                        <img class="mx-auto 2xl:w-[70%] xl:w-[70%] w-[100%] sm:w-[60%] md:w-[100%] lg:w-[80%]" src="/about-img.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="lg:basis-6/12 px-[15px] basis-full md:basis-6/12">
-                          <div class="who-right">
-                              <h2 class="2xl:text-[22px] font-medium 2xl:leading-10 xl:text-[22px] xl:leading-8 text-[#e0ac26] 2xl:mb-8 mb-6 mt-7 text-[18px] leading-7 md:mt-0 lg:text-lg lg:leading-7 lg:mb-8">Lorem Ipsum has been the industry standard galley of type and scrambled it to make type specimen</h2>
-                              <p class="2xl:text-lg xl:text-lg font-normal text-base sm:text-lg lg:text-base">Lorem Ipsum has been the industry standard dummy text ever since the 150s, when unknown printer took a galley of type and scrambled it to make type specimen It has survived not only five centuries Lorem Ipsum has been the industry standard text ever since the 1500s, when unknown printer took a 
-                              galley of type and scrambled it to make a type specimen book. It has survived not only scram to five centuries<br/><br/>industry standard dummy text ever since the 150s, when unknown printer took a galley of type and scrambled it to</p>
-                          </div>
-                      </div>
-                   </div>
-                </div>
-          </div>
-        </div>
-  </section>
-
-
-  <section class="lg:py-[100px] py-[60px] sm:py-[80px]">
-    <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-      <div class="row items-center">
-          <div class="lg:basis-6/12 px-[15px] basis-full">
-                <h2 class="lg:text-[38px] text-[20px] font-bold lg:leading-10 leading-7 text-black mb-3 sm:text-[28px]">Explore Premium Windows</h2>
-                <ul class="lg:mt-8 mt-7">
-                  <li class="py-1 flex">   
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="pt-[25px] pb-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
-                  </li>
-                  <li class="py-1 flex">
-                    <a class="lg:text-lg text-base sm:text-lg text-[#e0ac26]" href=""><i class="fa-solid fa-check"></i></a>
-                    <p class="lg:text-lg  text-base sm:text-lg font-normal pl-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse</p>
-                  </li>
-                </ul>
-          </div>
-          <div class="lg:basis-6/12 px-[15px] basis-full">
-                <div class="counter-right">
-                    <div class="row">
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                            <div class="counter-card mb-[30px] bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number1 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">300</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Project Completed</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card mb-[30px] bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number2 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">206</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Doors Per Day</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card lg:mb-[30px] mb-0 bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number3 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">200</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Satisfied Customer</div>
-                            </div>
-                        </div>
-                        <div class="lg:basis-6/12 px-[15px] basis-6/12">
-                        <div class="counter-card lg:mb-[30px] mb-0 bg-[#f2f2f2] lg:py-[70px] py-[40px] sm:py-[50px]">  
-                                <h2 class="count-text number4 lg:text-6xl text-4xl sm:text-5xl font-bold text-center text-[#383838] mb-3">15</h2>
-                                <div class="count-pera lg:text-[22px] text-[13px] sm:text-[18px] sm:leading-7 lg:leading-8 leading-6 text-[#383838] text-center md:text-[20px] md:leading-7">Door</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="bg-[#272727] lg:py-[100px] py-[60px] sm:py-[80px]">
-    <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-      <div class="request-form">
-          <div class="row justify-center">
-              <div class="lg:basis-6/12 px-[15px] basis-full">
-                <div>
-                    <h3 class="lg:text-[40px] text-[30px] leading-[34px] font-medium text-white mb-3 sm:text-[36px] sm:leading-[40px]">Send Message</h3>
-                    <p class="lg:text-lg text-base sm:text-lg text-[#bbb] font-normal 2xl:mr-20 mr-0 mb-3 lg:mr-0">Lorem ipsum dolor sit amet, conse adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <div class="form-block pt-11 mb-4">
-                  <form id="email-form" name="email-form" data-name="Email Form" method="get">
-                    <input type="text" class="text-field w-input" maxlength="256" name="main-2" data-name="main 2" placeholder="Name*" id="main" required=""/>
-                    <div class="form-side flex">
-                      <div class="w-1/2 mr-10">
-                        <input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email*" id="email-2" required=""/>
-                        </div>
-                        <div class="w-1/2">
-                          <input type="tel" class="text-field w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder="Phone*" id="email-3" required=""/>
-                          </div>
-                          </div>
-                          <input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Subject*" id="name-2" required=""/>
-                          <label for="field-2" class="massge-text">Message*</label>
-                          <textarea id="field-2" name="field-2" maxlength="5000" data-name="Field 2" placeholder="" required="" class="text-small-earea w-input"></textarea>
-                          <input type="submit" value="Send Messge" data-wait="Please wait..." class="submit-btn w-button"/>
-                          </form>
-                              </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-  </section>
-
-
-  <footer class="py-[60px] sm:py-[80px]">
+    <footer class="py-[60px] sm:py-[80px]">
       <div class="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div class="">
                 <div class="row items-center">
@@ -410,7 +360,7 @@ const about = () => {
                                         </div>
                                     </div>
                                     <div class="flex items-center mb-8">
-                                      <div>
+                                        <div>
                                         <i class="fa-solid fa-envelope lg:text-2xl text-lg sm:text-2xl"></i>
                                         </div>
                                         <div class="lg:text-lg text-base pl-4 sm:text-lg">
@@ -464,8 +414,10 @@ const about = () => {
         </div>
   </div>
 
+
+
     </>
   )
 }
 
-export default about
+export default catalog
