@@ -736,6 +736,9 @@ header{
     left: 46%;
     top: 15.5%;
   }
+  .what-title-block {
+    width: 275px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -841,7 +844,6 @@ header{
 }
 
 
-
 @media (min-width: 1536px) {
   .social-link {
     border: 1px solid transparent;
@@ -864,6 +866,9 @@ header{
   .active{
     padding-left: 64px;
   } 
+  .what-title-block {
+    width: 320px;
+  }
 }
 
 
