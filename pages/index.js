@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Navbar from '../component/Navbar'
 import Footer from  '../component/Footer'
 import styles from '../styles/Home.module.css'
-import { forceReloadUtil } from '../utiels/helper'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -220,7 +219,7 @@ const index = () => {
     </div> */}
     
     <Navbar />
-    
+
 
       <section className="hero-main relative">
         <div className="">
