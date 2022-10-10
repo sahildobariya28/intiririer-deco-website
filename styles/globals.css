@@ -27,12 +27,12 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+html {
+  color-scheme: dark;
+}
+body {
+  color: white;
+  background: black;
   }
 }
 
@@ -109,15 +109,15 @@ a {
  opacity: 1;
 }
 .reviews .slick-dots li button:before {
-    color: transparent;
-    font-size: 18px;
-    border: 2px solid #FFFFFF;
-    border-radius: 50%;
-    background-color: transparent;
-    opacity: 1;
+  color: transparent;
+  font-size: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
 }
 .logo-img {
-    width: 75%;
+  width: 75%;
 }
 .ab-main-navbar {
   position: absolute;
@@ -127,19 +127,19 @@ a {
   margin-bottom: 0;
 }
 .what-title-block {
-    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
-    position: absolute;
-    left: 0px;
-    top: -31px;
-    right: 0px;
-    z-index: 9;
-    width: 340px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #fff;
-    transition: all 0.5s;
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+  position: absolute;
+  left: 0px;
+  top: -31px;
+  right: 0px;
+  z-index: 9;
+  width: 340px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  transition: all 0.5s;
 }
 .what-we-card:hover .what-title-block{
   top:-40px;
@@ -196,7 +196,6 @@ a {
 .text-field {
   background-color: transparent;
   font-size: 18px;
-  
 }
 .text-field::placeholder {
   color: #fff;
@@ -366,9 +365,9 @@ footer {
 
 header{
   position: absolute;
-    z-index: 99;
-    left: 0;
-    right: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
 }
 .top-social {
   width: 33px;
@@ -426,14 +425,14 @@ header{
   width: 80%;
 }
 .get-new {
-    margin-left: 50px;
-    padding: 12px 27px;
-    border: 1px solid transparent;
-    border-radius: 0px;
-    background-color: #e0ac26;
-    color: #fff;
-    font-size: 16px;
-    transition: all 0.5s;
+  padding: 12px 27px;
+  margin-left: 50px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: #e0ac26;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.5s;
 }
 .get-new:hover {
   background-color: transparent;
@@ -596,6 +595,30 @@ header{
 }
 
 
+/* @media (max-width: 360px) {
+  .reviews .slick-prev {
+    display: none !important;
+  }
+  .reviews .slick-next {
+    display: none !important;
+  }
+  .reviews .slide-1 {
+    padding-bottom: 100px;
+  }
+  .reviews .slide-2 {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  .reviews .slide-3 {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  .reviews .slide-4 {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+} */
+
 @media (max-width: 640px) {
   .reviews .slide-1 {
     padding: 210px 0;
@@ -741,6 +764,7 @@ header{
   }
 }
 
+
 @media (min-width: 1024px) {
   .reviews .slide-1 {
     padding-top: 350px;
@@ -841,21 +865,24 @@ header{
   .active{
     padding-left: 40px;
   }
+  .what-title-block {
+    width: 335px;
+}
 }
 
 
 @media (min-width: 1536px) {
-  .social-link {
-    border: 1px solid transparent;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    margin-right: 55px;
-    padding: 25px;
-    border-radius: 50px;
-    background-color: #e0ac26;
-    align-items: center;
-    justify-content: center;
+.social-link {
+  border: 1px solid transparent;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-right: 55px;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: #e0ac26;
+  align-items: center;
+  justify-content: center;
   }
   .foot-logo{
     width: 75%;

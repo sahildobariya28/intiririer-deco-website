@@ -51,20 +51,20 @@ const Navbar = () => {
                                   <div className="basis-6/12">
                                     <div className="flex justify-end mr-[35px]">
                                             <div className="top-social">
-                                            <Link href="">
-                                              <a className="social-icon" href=""><i className="fa-brands fa-facebook-f"></i></a>
-                                            </Link>
+                                          <Link href="">
+                                            <a className="social-icon" href=""><i className="fa-brands fa-facebook-f"></i></a>
+                                          </Link>
                                             </div>
                                             <div className="top-social">
-                                            <Link href="">
-                                              <a className="social-icon" href=""><i className="fa-brands fa-instagram"></i></a>
-                                            </Link>
+                                          <Link href="">
+                                            <a className="social-icon" href=""><i className="fa-brands fa-instagram"></i></a>
+                                          </Link>
                                             </div>
                                             <div className="top-social">
-                                            <Link href="">
-                                              <a className="social-icon" href=""><i className="fa-brands fa-youtube"></i></a>
-                                            </Link>
-                                            </div>
+                                          <Link href="">
+                                             <a className="social-icon" href=""><i className="fa-brands fa-youtube"></i></a>
+                                          </Link>
+                                          </div>
                                     </div>
                                   </div>
                               </div>
@@ -113,24 +113,24 @@ const Navbar = () => {
             <div>
                 <ul>
                     <li className="mb-1">
-                    <Link href="/">
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="">Home</a>
-                    </Link>
+                    {/* <Link href="/"> */}
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/">Home</a>
+                    {/* </Link> */}
                     </li>
                     <li className="mb-1">
-                    <Link href="/about">
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="">About Us</a>
-                    </Link>
+                    {/* <Link href="/about"> */}
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/about">About Us</a>
+                    {/* </Link> */}
                     </li>
                     <li className="mb-1">
-                    <Link href="/catalog">
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="">Catalogues</a>
-                    </Link>
+                    {/* <Link href="/catalog"> */}
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/catalog">Catalogues</a>
+                    {/* </Link> */}
                     </li>
                     <li className="mb-1">
-                    <Link href="/contact">
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="">Contact Us</a>
-                    </Link>
+                    {/* <Link href="/contact"> */}
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/contact">Contact Us</a>
+                    {/* </Link> */}
                     </li>
                 </ul>
             </div>

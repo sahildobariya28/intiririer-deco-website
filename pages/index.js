@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Navbar from '../component/Navbar'
 import Footer from  '../component/Footer'
 import styles from '../styles/Home.module.css'
+import { forceReloadUtil } from '../utiels/helper'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-
 
 
 const index = () => {
@@ -43,7 +43,7 @@ const index = () => {
 
 
       
-      <header className="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
+      {/* <header className="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
       <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="flex sm:justify-between">
             <Link href="/">
@@ -217,7 +217,10 @@ const index = () => {
                           </div>
                           </div>
                           </div>
-    </div>
+    </div> */}
+    
+    <Navbar />
+    
 
       <section className="hero-main relative">
         <div className="">
