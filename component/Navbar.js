@@ -75,7 +75,7 @@ const Navbar = () => {
                     <div className="2XL:flex justify-between items-center hidden lg:flex  lg:items-center">
                     <div>
                       <Link href="/">
-                        <a href="" className={router.pathname == "/" ? "active" :"pl-4 pr-5 text-lg text-white hover:text-black"}>Home</a>
+                        <a href="" className="pl-4 pr-5 text-lg text-white hover:text-black">Home</a>
                       </Link>
                       <Link href="/about">
                         <a href="" className={router.pathname == "/about" ? "active" : "2xl:pl-16 lg:pl-10 pr-5 text-lg text-white hover:text-black" }>About Us</a>
@@ -98,8 +98,8 @@ const Navbar = () => {
           </div>
       </div>
     </header>
-
-
+  
+  
     <div className="navbar-menu relative z-50 hidden">
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav className="fixed top-0 left-0 bottom-0 z-[999999999] flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#fdfbf4] border-r overflow-y-auto">
@@ -113,31 +113,31 @@ const Navbar = () => {
             <div>
                 <ul>
                     <li className="mb-1">
-                    {/* <Link href="/"> */}
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/">Home</a>
-                    {/* </Link> */}
+                    <Link href="/">
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded">Home</a>
+                    </Link>
                     </li>
                     <li className="mb-1">
-                    {/* <Link href="/about"> */}
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/about">About Us</a>
-                    {/* </Link> */}
+                    <Link href="/about">
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" >About Us</a>
+                    </Link>
                     </li>
                     <li className="mb-1">
-                    {/* <Link href="/catalog"> */}
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/catalog">Catalogues</a>
-                    {/* </Link> */}
+                    <Link href="/catalog">
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded">Catalogues</a>
+                    </Link>
                     </li>
                     <li className="mb-1">
-                    {/* <Link href="/contact"> */}
-                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/contact">Contact Us</a>
-                    {/* </Link> */}
+                    <Link href="/contact">
+                        <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded">Contact Us</a>
+                    </Link>
                     </li>
                 </ul>
             </div>
         </nav>
     </div> 
-
-
+  
+  
     <div className="ab-sticky-navbar">
       <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" className="2xl:py-3 xl:py-3 lg:py-3 md:py-4 sm:py-3 py-3 bg-white">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">

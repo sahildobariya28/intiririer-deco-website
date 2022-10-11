@@ -3,11 +3,11 @@ import Link from "next/link"
 import { useRouter } from 'next/router';
 
 const Footer = () => {
-    const router = useRouter();
+  const router = useRouter();
   return (
-    <>
+  <>
     
-    <footer className="py-[60px] sm:py-[80px]">
+  <footer className="py-[60px] sm:py-[80px]">
       <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="">
                 <div className="row items-center">
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
   </div>
     
-    </>
+  </>
   )
 }
 

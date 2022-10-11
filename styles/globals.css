@@ -375,7 +375,7 @@ header{
   margin-left: 20px;
   background-color: #fff;
   border-radius: 50%;
-  transition: all 0.5s
+  transition: all 0.5s;
 } 
 .social-icon {
   color: #e0ac26;
@@ -383,7 +383,7 @@ header{
   display: flex;
   justify-content: center;
   padding: 8px 0;
-  transition: all 0.5s
+  transition: all 0.5s;
 }
 .get-btn {
   margin-right: 15px;
@@ -826,6 +826,9 @@ header{
 }
 .active{
   padding-left: 40px;
+}
+.slick-dotted.slick-slider {
+margin-bottom: 0 !important;
 }
 }
 

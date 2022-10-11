@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import Navbar from '../component/Navbar'
 import Footer from  '../component/Footer'
@@ -12,7 +13,7 @@ const contact = () => {
     
    
     
-<Head>
+      <Head>
         <title>Contact Us</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="Free Web tutorials" />
@@ -21,9 +22,10 @@ const contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
-        <script src='/sc.js'></script>
+       
 
       </Head>
+      <Script src='/sc.js'/>
       <script src="/jquery-1.11.0.min.js"></script>
       <script src="/jquery-migrate-1.2.1.min.js"></script>
       <script src="/slick.min.js"></script>
@@ -36,15 +38,15 @@ const contact = () => {
 
       <Navbar />
 
-     <section className="contact-bg">
+  <section className="contact-bg">
           <div className="over-bg">
           </div>
           <h2 className="relative text-white font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">Contact Us</h2>
-     </section>
+  </section>
 
     
 
-    <section className="2xl:py-[100px] py-[60px]">
+  <section className="2xl:py-[100px] py-[60px]">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
             <div className="map-main">
                 <div className="row">
@@ -78,10 +80,10 @@ const contact = () => {
                 </div>
             </div>
         </div>
-    </section>
+  </section>
 
   
-    <section className="bg-[#272727] lg:py-[100px] py-[60px] sm:py-[80px]">
+  <section className="bg-[#272727] lg:py-[100px] py-[60px] sm:py-[80px]">
     <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
       <div className="request-form">
           <div className="row justify-center">
@@ -224,4 +226,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default contact;

@@ -1,8 +1,8 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from  '../component/Footer'
-import Script from 'next/script';
 import { useRouter } from 'next/router';
 import Navbar from '../component/Navbar'
 
@@ -21,9 +21,10 @@ const about = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         
 
-      <script src='/sc.js'></script>
 
       </Head>
+      <Script src='/sc.js'/>
+
       <script src="/jquery-1.11.0.min.js"></script>
       <script src="/jquery-migrate-1.2.1.min.js"></script>
       <script src="/slick.min.js"></script>
@@ -36,14 +37,14 @@ const about = () => {
 
       <Navbar />
 
-     <section className="about-bg">
+  <section className="about-bg">
           <div className="over-bg">
           </div>
           <h2 className="relative text-white z-[9] font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">About Us</h2>
-     </section>
+  </section>
     
 
-    <section className="2xl:py-[85px] py-[50px] sm:py-[60px]">
+  <section className="2xl:py-[85px] py-[50px] sm:py-[60px]">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="2xl:w-[72%] w-full mx-auto xl:w-[75%]">
             <p className="2xl:text-lg 2xl:leading-9 text-center text-base leading-8 sm:text-[17px] lg:text-lg lg:leading-9 xl:text-lg xl:leading-9">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -51,10 +52,10 @@ const about = () => {
                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt anim id est laborum."</p>
           </div>
         </div>
-    </section>
+  </section>
 
 
-    <section className="2xl:py-[100px] py-[60px] sm:py-[80px] lg:py-[100px] bg-[#fafafa]">
+  <section className="2xl:py-[100px] py-[60px] sm:py-[80px] lg:py-[100px] bg-[#fafafa]">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="">
                 <h2 className="2xl::text-[50px] 2xl:leading-[65px] font-bold text-[#383838] text-center text-[34px] leading-[34px] sm:text-[42px] sm:leading-[42px] lg:text-[38px] lg:leading-10 xl:text-[42px]">Who We Are</h2>
@@ -296,4 +297,4 @@ const about = () => {
   )
 }
 
-export default about
+export default about;

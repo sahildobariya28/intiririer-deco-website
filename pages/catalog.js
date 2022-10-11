@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import Navbar from '../component/Navbar'
 import Footer from  '../component/Footer'
@@ -20,9 +21,10 @@ const catalog = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 
-        <script src='/sc.js'></script>
+        
 
       </Head>
+      <Script src='/sc.js'/>
       <script src="/jquery-1.11.0.min.js"></script>
       <script src="/jquery-migrate-1.2.1.min.js"></script>
       <script src="/slick.min.js"></script>
@@ -34,11 +36,11 @@ const catalog = () => {
 
       <Navbar />
 
-     <section className="catalog-bg">
+    <section className="catalog-bg">
           <div className="over-bg">
           </div>
           <h2 className="relative text-white z-[9] font-bold 2xl:text-[50px] 2xl:leading-[65px] text-center text-[38px] leading-[48px]">Catalogues</h2>
-     </section>
+    </section>
     
 
     <section className="2xl:py-[100px]  py-[60px]">
@@ -244,20 +246,20 @@ const catalog = () => {
                 </div>
           </div>
       </div>
-  </footer>
+    </footer>
 
 
-  <div className="copy-right py-[10px]">
+    <div className="copy-right py-[10px]">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
             <div className="flex justify-between">
               <p className="lg:text-base text-xs sm:text-sm font-normal">ⓒ Copyright 2022. All right reserved</p>
               <p className="lg:text-base text-xs sm:text-sm font-normal">Cookie Policy</p>
             </div>
         </div>
-  </div>
+    </div>
 
     </>
   )
 }
 
-export default catalog
+export default catalog;

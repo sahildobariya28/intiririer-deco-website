@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
 
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-});
+// });
 
 
 
