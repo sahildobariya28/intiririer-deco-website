@@ -9,15 +9,15 @@ const Navbar = () => {
       <header className="2xl:mt-[50px] sm:mt-[0px] ab-main-navbar sm:bg-white lg:bg-transparent lg:mt-[50px] bg-white">
         <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
           <div className="flex sm:justify-between">
-            <Link href="/">
-              <a className="py-[15px] sm:py-3 bg-white" href="">
+            {/* <Link href="/"> */}
+              <a className="py-[15px] sm:py-3 bg-white" href="/">
                 <img
                   className="logo-img 2xl:mx-auto sm:mx-0 lg:mx-auto"
                   src="/logo-main.png"
                   alt=""
                 />
               </a>
-            </Link>
+            {/* </Link> */}
             <div className="lg:hidden self-center">
               <button className="navbar-burger flex items-center text-black">
                 <svg
@@ -87,14 +87,14 @@ const Navbar = () => {
               <div className="bg-[#e0ac26] w-full py-4 lg:py-3">
                 <div className="2XL:flex justify-between items-center hidden lg:flex  lg:items-center">
                   <div>
-                    <Link href="/">
+                    {/* <Link href="/"> */}
                       <a
-                        href=""
+                        href="/"
                         className="pl-4 pr-5 text-lg text-white hover:text-black"
                       >
                         Home
                       </a>
-                    </Link>
+                    {/* </Link> */}
                     <Link href="/about">
                       <a
                         href=""
@@ -173,11 +173,11 @@ const Navbar = () => {
           <div>
             <ul>
               <li className="mb-1">
-                <Link href="/">
-                  <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded">
+                {/* <Link href="/"> */}
+                  <a className="block py-3 text-base font-semibold text-gray-400 hover:text-black rounded" href="/">
                     Home
                   </a>
-                </Link>
+                {/* </Link> */}
               </li>
               <li className="mb-1">
                 <Link href="/about">
