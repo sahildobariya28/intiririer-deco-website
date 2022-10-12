@@ -37,13 +37,13 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
             referrerPolicy="no-referrer"
           />
-          <script src="/jquery-1.11.0.min.js"></script>
-          <script src="/jquery-migrate-1.2.1.min.js"></script>
-          <script src="/slick.min.js"></script>
         </Head>
         <body>
           <Main />
           <NextScript />
+          <Script src="/jquery-1.11.0.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/jquery-migrate-1.2.1.min.js" strategy="beforeInteractive"></Script>
+          <Script src="/slick.min.js" strategy="beforeInteractive"></Script>
           <Script src="/sc.js" strategy="lazyOnload"></Script>
         </body>
       </Html>

@@ -4,9 +4,53 @@ import Footer from "../component/Footer";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import HomeSlider from "../component/Playground";
+import { useEffect } from "react";
 
 const index = () => {
   const router = useRouter();
+  useEffect(() => {
+    function animate(obj, initVal, lastVal, duration) {
+      let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime) => {
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+          startTime = currentTime;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+      };
+      //start animating
+      window.requestAnimationFrame(step);
+    }
+    let text1 = document.querySelector(".number1");
+    let text2 = document.querySelector(".number2");
+    let text3 = document.querySelector(".number3");
+    let text4 = document.querySelector(".number4");
+    const load = () => {
+      animate(text1, 0, 300, 5000);
+      animate(text2, 0, 206, 5000);
+      animate(text3, 0, 200, 5000);
+      animate(text4, 0, 15, 5000);
+    };
+    load();
+  });
   return (
     <>
       <Head>
@@ -15,7 +59,7 @@ const index = () => {
         <meta name="description" content="Free Web tutorials" />
         <meta name="keywords" content="HTML, CSS, JavaScript, next.js" />
         <meta name="author" content="thapa technical" />
-        <meta 
+        <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
@@ -23,80 +67,7 @@ const index = () => {
 
       <section className="hero-main relative">
         <div className="">
-          <div className="reviews">
-            <div className="text-center slide-1">
-              <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-                <div className="hero-content 2xl:max-w-[59%] xl:max-w-[65%] lg:max-w-[87%] sm:max-w-[70%] mx-auto max-w-full">
-                  <h2 className="lg:text-2xl text-white font-bold text-lg sm:text-xl">
-                    WELCOME TO HOME INTERIOR
-                  </h2>
-                  <h1 className="2xl:text-6xl font-bold text-white my-5 text-xl sm:text-4xl md:text-5xl md:leading-[56px] lg:text-[52px]">
-                    THE <span className="text-[#e0ac26]">FUTURIST</span> DOOR
-                    FOR YOU!
-                  </h1>
-                  <p className="lg:text-lg lg:leading-8 text-white font-normal text-sm sm:text-base leading-7 sm:leading-8">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry..
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="text-center slide-2">
-              <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-                <div className="hero-content 2xl:max-w-[59%] xl:max-w-[65%] lg:max-w-[87%] sm:max-w-[70%] mx-auto max-w-full">
-                  <h2 className="lg:text-2xl text-white font-bold text-lg sm:text-xl">
-                    WELCOME TO HOME INTERIOR
-                  </h2>
-                  <h1 className="2xl:text-6xl font-bold text-white my-5 text-xl sm:text-4xl md:text-5xl md:leading-[56px] lg:text-[52px]">
-                    THE <span className="text-[#e0ac26]">FUTURIST</span> DOOR
-                    FOR YOU!
-                  </h1>
-                  <p className="lg:text-lg lg:leading-8 text-white font-normal text-sm sm:text-base leading-7 sm:leading-8">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry..
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="text-center slide-3">
-              <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-                <div className="hero-content 2xl:max-w-[59%] xl:max-w-[65%] lg:max-w-[87%] sm:max-w-[70%] mx-auto max-w-full">
-                  <h2 className="lg:text-2xl text-white font-bold text-lg sm:text-xl">
-                    WELCOME TO HOME INTERIOR
-                  </h2>
-                  <h1 className="2xl:text-6xl font-bold text-white my-5 text-xl sm:text-4xl md:text-5xl md:leading-[56px] lg:text-[52px]">
-                    THE <span className="text-[#e0ac26]">FUTURIST</span> DOOR
-                    FOR YOU!
-                  </h1>
-                  <p className="lg:text-lg lg:leading-8 text-white font-normal text-sm sm:text-base leading-7 sm:leading-8">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry..
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="text-center slide-4">
-              <div className="xl:px-[15px] sm:px-[15px] px-[15px] md:container mx-auto">
-                <div className="hero-content 2xl:max-w-[59%] xl:max-w-[65%] lg:max-w-[87%] sm:max-w-[70%] mx-auto max-w-full">
-                  <h2 className="lg:text-2xl text-white font-bold text-lg sm:text-xl">
-                    WELCOME TO HOME INTERIOR
-                  </h2>
-                  <h1 className="2xl:text-6xl font-bold text-white my-5 text-xl sm:text-4xl md:text-5xl md:leading-[56px] lg:text-[52px]">
-                    THE <span className="text-[#e0ac26]">FUTURIST</span> DOOR
-                    FOR YOU!
-                  </h1>
-                  <p className="lg:text-lg lg:leading-8 text-white font-normal text-sm sm:text-base leading-7 sm:leading-8">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry..
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HomeSlider />
         </div>
       </section>
 
@@ -628,7 +599,6 @@ const index = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };
